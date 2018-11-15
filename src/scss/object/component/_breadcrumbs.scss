@@ -1,0 +1,22 @@
+/*********************************************************
+
+
+breadcrumbs
+
+
+**********************************************************/
+
+.c-breadcrumbs__inner {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.c-breadcrumbs__item {
+    &:not(:last-of-type) {
+        &::after {
+            content: " > "
+        }
+    }
+}

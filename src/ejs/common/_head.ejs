@@ -1,0 +1,24 @@
+<%
+//デフォルトを設定 - config/data.jsonとマージ
+var ogimage = pageData.ogimage || ROOT_URL + "/images/ogp.png";
+var currentUrl = ROOT_URL + '/' + pageData.path;
+var keywords = pageData.keywords || KEYWORDS;
+var description = pageData.description || DESCRIPTION;
+%>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="UTF-8">
+<title><%= pageData.title + ' | ' + SITE_NAME %></title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+<meta name="keywords" content="<%= keywords %>">
+<meta name="description" content="<%= description %>">
+<meta property="og:title" content="<%= pageData.title + ' | ' + SITE_NAME %>">
+<meta property="og:type" content="article">
+<meta property="og:url" content="<%= currentUrl %>">
+<meta property="og:image" content="<%= ogimage %>">
+<meta property="og:site_name" content="<%= SITE_NAME %>">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="<%= pageData.title + ' | ' + SITE_NAME %>">
+<link rel="stylesheet" href="<%= pageData.dir %>css/style.css?v=<%= Date.now() %>">
+<script type="text/javascript" src="<%= pageData.dir %>js/main.js?v=<%= Date.now() %>"></script>
+</head>

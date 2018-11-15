@@ -1,0 +1,16 @@
+
+<%
+// Breadcrubbs
+if( breadCrumbs.length > 0 ){  %>
+<nav class="c-breadcrumbs">
+	<ul class="c-breadcrumbs__inner">
+		<li class="c-breadcrumbs__item"><a href="<%= pageData.dir %>">TOP</a></li>
+		<%  breadCrumbs.forEach(function (item) { %>
+		<li class="c-breadcrumbs__item">
+			<a href="<%= item.path %>"><%= item.title %></a>
+		</li>
+		<% }); %>
+	</ul>
+</nav>
+<% } %>
+

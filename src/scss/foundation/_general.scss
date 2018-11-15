@@ -1,0 +1,73 @@
+/*********************************************************
+
+
+
+         Common
+         general
+
+
+
+
+**********************************************************/
+
+/****************************************
+
+          General Setting
+
+*****************************************/
+html {
+	font-size: 15px;
+}
+/* ~~~~~ SP ~~~~~~ */
+@media (max-width: $bp_sp ) {
+	html {
+		font-size: 12px;
+	}
+}
+body {
+	font-size: 1em;
+	line-height: 1.8;
+	font-weight: 300;
+	font-family: $def_font;
+	letter-spacing: 0.06em;
+	clear: #333333;
+	-webkit-text-size-adjust: 100%;
+	text-justify: inter-ideograph;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+svg {
+	max-width: 100%;
+}
+.safari,.chrome,.firefox {
+	svg {
+		height: auto;
+	}
+}
+b,strong,h1,h2,h3,h4,h5,h6 {
+	line-height: 1.5;
+	font-weight: 600;
+
+}
+button {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	padding: 0;
+	margin: 0;
+	-webkit-appearance: none;
+	appearance: none;
+	font-family: $def_font;
+	box-sizing: content-box;
+	font-size: 1rem;
+}
+a {
+	text-decoration: inherit;
+	color: inherit;
+	&:focus {
+		outline: none;
+	}
+}

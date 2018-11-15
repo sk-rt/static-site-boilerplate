@@ -1,0 +1,33 @@
+<% var pageData = {
+	path: "about/",
+	dir: "../",
+	title: "ABOUT",
+	description: "",//optional
+	ogimage: "",//optional
+	keywords:""//optional
+};
+var breadCrumbs = [
+	{
+		path: pageData.dir + pageData.path,
+		title:pageData.title
+	}
+];
+
+ %>
+<!DOCTYPE html>
+<html lang="ja">
+<%- include( pageData.dir + 'common/_head',{pageData: pageData}); %>
+<body>
+<%- include( pageData.dir + 'common/_header',{pageData: pageData}); %>
+<%- include( pageData.dir + 'components/_breadcrumbs',{pageData: pageData,breadCrumbs:breadCrumbs}); %>
+
+<main role="main" class="l-main">
+
+	<h2 class="c-heading--primary">
+		<%= pageData.title %>
+	</h2>
+
+</main>
+<%- include( pageData.dir + 'common/_footer',{pageData: pageData}); %>
+</body>
+</html>

@@ -1,0 +1,32 @@
+
+/*********************************************************
+
+
+ Footer
+
+
+**********************************************************/
+
+.l-footer {
+	position: relative;
+	text-align: center;
+	background-color: #CCC;
+}
+.l-footer-navi {
+	padding: 32px 0;
+	text-align: center;
+}
+.l-footer-navi__item {
+	display: inline-block;
+	font-size: 13px;
+	a {
+		display: block;
+		padding: 2px 1em;
+	}
+}
+.l-footer__copyright {
+	text-align: center;
+	font-size: 11px;
+	padding: 20px 0;
+}
+

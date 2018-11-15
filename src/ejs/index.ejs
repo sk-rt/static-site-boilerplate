@@ -1,0 +1,26 @@
+<% var pageData = {
+	path: "",
+	dir: "./",
+	title: "",
+	description: "",//optional
+	ogimage: "",//optional
+	keywords:""//optional
+};
+var breadCrumbs = [];
+
+ %>
+<!DOCTYPE html>
+<html lang="ja">
+<%- include( pageData.dir + 'common/_head',{pageData: pageData}); %>
+<body>
+<%- include( pageData.dir + 'common/_header',{pageData: pageData}); %>
+<main role="main" class="l-main">
+
+    <div class="p-hero">
+        <img src="<%= pageData.dir %>images/hero.jpg" alt="">
+    </div>
+
+</main>
+<%- include( pageData.dir + 'common/_footer',{pageData: pageData}); %>
+</body>
+</html>

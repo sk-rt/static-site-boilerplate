@@ -1,0 +1,46 @@
+
+/*********************************************************
+
+
+
+ utils
+
+
+
+
+**********************************************************/
+
+/****************************************
+
+          layout
+
+*****************************************/
+.u-gutter {
+	padding-left: $gutter_pc;
+	padding-right: $gutter_pc;
+}
+/* ~~~~~ SP ~~~~~~ */
+@media (max-width: $bp_sp ) {
+	.u-gutter {
+		padding-left: $gutter_sp;
+		padding-right: $gutter_sp;
+	}
+}
+.u-container {
+	max-width: $pc_content_width;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.u-sp-only {
+	display: none;
+}
+/* ~~~~~ SP ~~~~~~ */
+@media (max-width: $bp_sp ) {
+	.u-sp-only {
+		display: block;
+	}
+	.u-pc-only {
+		display: none;
+	}
+};
