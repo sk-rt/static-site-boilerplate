@@ -78,6 +78,8 @@ module.exports = {
         contentBase: `${__dirname}/build`,
         watchContentBase: true,
         open: true,
+        host: '0.0.0.0',
+        useLocalIp: true,
         port: 8080
     }
 };
