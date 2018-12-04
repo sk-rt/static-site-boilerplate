@@ -6,6 +6,7 @@ Boilerplate for simple web development, *HTML*, *CSS*, *JavaScript*
 - **CSS** : scss + PostCss Autoplefixer (build by webpack)
 - **HTML** : EJS
 - **Local Server** : webpack-dev-server
+- **Linter/Formatter**: eslint/prettier
 
 
 ## Setup

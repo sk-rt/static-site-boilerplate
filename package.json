@@ -20,7 +20,19 @@
     "ejs:watch": "nodemon --watch src/ejs -e ejs -x \"npm run ejs:build \"",
     "ejs:prod": "ejs-cli --base-dir src/ejs/ '/**/!(_*).ejs' --out dist/  --options src/ejs/config/data.json",
     "cpx:watch": "cpx 'src/static/**/!(__*)' build/ --watch --clean",
-    "cpx:prod": "cpx 'src/static/**/!(__*)' dist/ "
+    "cpx:prod": "cpx 'src/static/**/!(__*)' dist/ ",
+    "lint": "eslint src/**/*.js --fix"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "git add"
+    ]
   },
   "devDependencies": {
     "@babel/cli": "^7.1.5",
@@ -31,11 +43,17 @@
     "cpx": "^1.5.0",
     "css-loader": "^1.0.1",
     "ejs-cli": "^2.0.1",
+    "eslint": "^5.9.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "husky": "^1.2.0",
+    "lint-staged": "^8.1.0",
     "mini-css-extract-plugin": "^0.4.4",
     "node-sass": "^4.10.0",
     "nodemon": "^1.18.6",
     "postcss": "^7.0.5",
     "postcss-loader": "^3.0.0",
+    "prettier": "^1.15.3",
     "sass-loader": "^7.1.0",
     "webpack": "^4.25.1",
     "webpack-cli": "^3.1.2",

@@ -18,7 +18,7 @@ module.exports = {
     },
     target: 'web',
     mode: devMode,
-    devtool: sourceMap ? 'inline-source-map':false ,
+    devtool: sourceMap ? 'inline-source-map' : false,
     output: {
         path: outputPath,
         publicPath: publicPath,
