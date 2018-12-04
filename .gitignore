@@ -3,5 +3,14 @@ node_modules
 .idea
 .vscode
 .DS_Store
-npm-debug.log
+
+# Directory
 build/
+dist/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
