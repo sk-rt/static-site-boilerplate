@@ -21,7 +21,7 @@
     "ejs:prod": "ejs-cli --base-dir src/ejs/ '/**/!(_*).ejs' --out dist/  --options src/ejs/config/data.json",
     "cpx:watch": "cpx 'src/static/**/!(__*)' build/ --watch --clean",
     "cpx:prod": "cpx 'src/static/**/!(__*)' dist/ ",
-    "lint": "eslint src/**/*.js --fix"
+    "lint:fix": "eslint src/**/*.js --fix"
   },
   "husky": {
     "hooks": {
@@ -45,7 +45,7 @@
     "ejs-cli": "^2.0.1",
     "eslint": "^5.9.0",
     "eslint-config-prettier": "^3.3.0",
-    "eslint-loader": "^2.1.1",
+    "eslint-loader": "2.1.0",
     "eslint-plugin-prettier": "^3.0.0",
     "husky": "^1.2.0",
     "lint-staged": "^8.1.0",
